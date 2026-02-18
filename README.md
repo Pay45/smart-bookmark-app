@@ -16,14 +16,14 @@ A simple bookmark manager built with Next.js App Router, Supabase Auth, Database
 - Tailwind CSS
 
 # Problems Faced and Solutions
-1. Invalid Supabase URL Error
+### 1. Invalid Supabase URL Error
    - Issue
      - The Supabase url was invalid that was present in .env.local
    - Fix
-     - In the Supabase project settings, I copied correct Project URL and Anon Key and added them to .env.local file.
+     - In the Supabase project settings, I copied the correct Project URL and Anon Key and then added to .env.local file.
        Restarted dev server to reload environment variables which fixed the issue.
 
-2. Add Bookmark Button Was Not Working
+### 2. Add Bookmark Button Was Not Working
    - Issue
      - After clicking the "Add Bookmark" button, nothing was getting added to the list.
        There was no visible UI error, but the bookmark was not saved and the list stayed unchanged.
