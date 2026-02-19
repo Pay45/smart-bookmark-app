@@ -2,7 +2,7 @@
 
 A simple bookmark manager built with Next.js App Router, Supabase Auth, Database and Realtime.
 
-# Features
+## Features
 - Google OAuth Login
 - Add bookmark (title + URL)
 - Bookmarks are private per user (Row Level Security)
@@ -10,12 +10,12 @@ A simple bookmark manager built with Next.js App Router, Supabase Auth, Database
 - Delete bookmarks
 - Deployed on Vercel
 
-# Tech Stack
+## Tech Stack
 - Next.js (App Router)
 - Supabase (Auth, Database, Realtime)
 - Tailwind CSS
 
-# Problems Faced and Solutions
+## Problems Faced and Solutions
 ### 1. Invalid Supabase URL Error
    - Issue
      - The Supabase url was invalid that was present in .env.local
