@@ -33,3 +33,11 @@ A simple bookmark manager built with Next.js App Router, Supabase Auth, Database
      Since bookmarks were supposed to be stored per logged-in user, my Supabase table contained user_id.
      After updating the code by adding user_id: user.id, the bookmark was successfully inserted and showing in the UI.
 
+### 3. Login Redirect Issue After Deployment
+   - Issue
+     - After deploying the app on Vercel, the login page loaded correctly.  
+        But after logging in with Google, the browser showed:
+        'This site can’t be reached (localhost refused to connect)'
+   - Cause & Fix
+     - Supabase was still redirecting users back to local after google login. Since the app was deployed online, localhost was not valid anymore.
+        I fixed this from the authentication URL settings in Supabase by updating the site url to my Vercel deployed URL.
